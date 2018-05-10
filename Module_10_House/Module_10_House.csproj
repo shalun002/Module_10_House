@@ -48,6 +48,7 @@
     <Compile Include="Modules\Door.cs" />
     <Compile Include="Modules\House.cs" />
     <Compile Include="Modules\Roof.cs" />
+    <Compile Include="Modules\Stroika.cs" />
     <Compile Include="Modules\Team.cs" />
     <Compile Include="Modules\TeamLeader.cs" />
     <Compile Include="Modules\Wall.cs" />
