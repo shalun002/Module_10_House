@@ -8,8 +8,9 @@ namespace Module_10_House.Interface
 {
     interface IWorker
     {
-        string Name  { get; set; }
+        string Name { get; set; }
         double Salary { get; set; }
         bool IsTeam { get; set; }
+        void PrintReport();
     }
 }

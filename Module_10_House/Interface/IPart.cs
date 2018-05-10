@@ -13,5 +13,7 @@ namespace Module_10_House.Interface
         DateTime StartWork { get; set; }
 
         DateTime EndWork { get; set; }
+
+        int Priority { get; set; }
     }
 }

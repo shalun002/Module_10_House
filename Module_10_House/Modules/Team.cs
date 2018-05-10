@@ -27,14 +27,23 @@ namespace Module_10_House.Modules
 
         public void WorkJ(ref List<IPart> parts)
         {
-            foreach (IPart item in parts)
+            foreach (IPart item in parts.OrderBy(o => o.Priority))
             {
-                if (item.StartWork == null)
+                int wNum = rnd.Next(0, Workers.Count);
+
+                if (!Workers[wNum].IsTeam)
                 {
-                    item.StartWork = DateTime.Now;
-                    item.EndWork = DateTime.Now.AddDays(rnd.Next(1, 30));
-                    Workers[rnd.Next(0, Workers.Count)].jobs.Add(item);
-                    break;
+                    if (item.StartWork == null)
+                    {
+                        item.StartWork = DateTime.Now;
+                        item.EndWork = DateTime.Now.AddDays(rnd.Next(1, 30));
+                        Workers[wNum].jobs.Add(item);
+                        break;
+                    }
+                }
+                else
+                {
+                    Workers[wNum].PrintReport(parts);
                 }
             }
         }

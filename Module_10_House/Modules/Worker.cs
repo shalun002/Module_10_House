@@ -13,5 +13,10 @@ namespace Module_10_House.Modules
         public double Salary { get; set; }
         public bool IsTeam { get; set; } = false;
         public List<IPart> jobs { get; set; } = new List<IPart>();
+
+        public void PrintReport()
+        {
+
+        }
     }
 }
