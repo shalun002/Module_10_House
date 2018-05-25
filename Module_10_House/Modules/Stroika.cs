@@ -19,7 +19,7 @@ namespace Module_10_House.Modules
             while (house.PartsHouse.Count(c=>c.StartWork == null) > 0)
             {
                 team.WorkJ(ref house.PartsHouse);
-            }            
+            }
         }
     }
 }

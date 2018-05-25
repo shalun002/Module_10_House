@@ -11,6 +11,6 @@ namespace Module_10_House.Interface
         string Name { get; set; }
         double Salary { get; set; }
         bool IsTeam { get; set; }
-        void PrintReport();
+        void PrintReport(List<IPart> parts);
     }
 }

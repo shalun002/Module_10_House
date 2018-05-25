@@ -12,8 +12,8 @@ namespace Module_10_House.Modules
         public string Name { get; set; }
         public DateTime StartWork { get; set; }
         public DateTime EndWork { get; set; }
-        public string Material { get; set; }
         public string Color { get; set; }
         public string Manufacture { get; set; }
+        public int Priority { get; set; }
     }
 }

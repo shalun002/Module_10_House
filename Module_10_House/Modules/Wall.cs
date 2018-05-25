@@ -13,5 +13,6 @@ namespace Module_10_House.Modules
         public DateTime StartWork { get; set; }
         public DateTime EndWork { get; set; }
         public string Material { get; set; }
+        public int Priority { get; set; }
     }
 }
